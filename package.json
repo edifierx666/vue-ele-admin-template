@@ -1,7 +1,8 @@
 {
   "name": "adminpro",
   "scripts": {
-    "dev": "vue-cli-service serve",
+    "dev": "npm-run-all init start",
+    "start": "vue-cli-service serve",
     "build:prod": "vue-cli-service build",
     "build:stage": "vue-cli-service build --mode staging",
     "svgo": "svgo -f src/common/icons/svg --config=src/common/icons/svgo.yml",
