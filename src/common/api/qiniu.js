@@ -1,8 +1,8 @@
-import request from '@/common/utils/request'
+import request from "@/common/utils/request";
 
 export function getToken() {
   return request({
-    url: '/qiniu/upload/token', // 假地址 自行替换
-    method: 'get'
-  })
+    url: "/qiniu/upload/token", // 假地址 自行替换
+    method: "get"
+  });
 }

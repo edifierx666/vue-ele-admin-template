@@ -1,19 +1,13 @@
 <template>
-  <div class="dashboard-container">
-    主页
-  </div>
+  <div class="dashboard-container">主页</div>
 </template>
-
 <script>
 export default {
-  name: 'Dashboard',
+  name: "Dashboard",
   data() {
-    return {
-    }
+    return {};
   },
-  computed: {
-  },
-  created() {
-  }
-}
+  computed: {},
+  created() {}
+};
 </script>

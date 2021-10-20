@@ -1,10 +1,10 @@
-import defaultSettings from '@/core/settings'
+import defaultSettings from "@/core/settings";
 
-const title = defaultSettings.title || ''
+const title = defaultSettings.title || "";
 
 export default function getPageTitle(pageTitle) {
   if (pageTitle) {
-    return `${pageTitle} - ${title}`
+    return `${pageTitle} - ${title}`;
   }
-  return `${title}`
+  return `${title}`;
 }

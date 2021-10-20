@@ -3,9 +3,8 @@
     <slot />
   </component>
 </template>
-
 <script>
-import { isExternal } from '@/common/utils/validate'
+import { isExternal } from "@/common/utils/validate";
 
 export default {
   props: {
@@ -16,13 +15,13 @@ export default {
   },
   computed: {
     isExternal() {
-      return isExternal(this.to)
+      return isExternal(this.to);
     },
     type() {
       if (this.isExternal) {
-        return 'a'
+        return "a";
       }
-      return 'router-link'
+      return "router-link";
     }
   },
   methods: {
@@ -30,14 +29,14 @@ export default {
       if (this.isExternal) {
         return {
           href: to,
-          target: '_blank',
-          rel: 'noopener'
-        }
+          target: "_blank",
+          rel: "noopener"
+        };
       }
       return {
         to: to
-      }
+      };
     }
   }
-}
+};
 </script>
