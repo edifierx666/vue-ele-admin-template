@@ -57,7 +57,7 @@ specifiers:
   vue-count-to: 1.0.13
   vue-router: ^3.5.2
   vue-splitpane: 1.0.4
-  vue-template-compiler: 2.6.10
+  vue-template-compiler: ^2.6.14
   vuedraggable: ^2.24.3
   vuex: ^3.6.2
   xlsx: 0.14.1
@@ -100,9 +100,9 @@ devDependencies:
   '@babel/plugin-proposal-optional-chaining': registry.nlark.com/@babel/plugin-proposal-optional-chaining/7.14.5
   '@vue/cli-plugin-babel': registry.nlark.com/@vue/cli-plugin-babel/4.4.4_526581ce350fe528e8eedcfedd03c745
   '@vue/cli-plugin-eslint': registry.nlark.com/@vue/cli-plugin-eslint/4.4.4_4c02ce60bf5d245163a3258a3e654afe
-  '@vue/cli-plugin-unit-jest': registry.nlark.com/@vue/cli-plugin-unit-jest/4.4.4_1657b3ff25c06bc0119bf68b045e0a94
-  '@vue/cli-service': registry.nlark.com/@vue/cli-service/4.4.4_718d40b2aeef08a3cca4d73cd22ce32f
-  '@vue/test-utils': registry.nlark.com/@vue/test-utils/1.0.0-beta.29_1a0b9951acc292a318c154c982a62228
+  '@vue/cli-plugin-unit-jest': registry.nlark.com/@vue/cli-plugin-unit-jest/4.4.4_d66ccbb5f6185d8a96d8db6d1190c254
+  '@vue/cli-service': registry.nlark.com/@vue/cli-service/4.4.4_0f25d1aa8415e98c3e62a4178f3c555d
+  '@vue/test-utils': registry.nlark.com/@vue/test-utils/1.0.0-beta.29_9065e7474e033a8e4b95615fc8e6c36c
   autoprefixer: registry.nlark.com/autoprefixer/9.5.1
   babel-eslint: 10.1.0_eslint@6.7.2
   babel-jest: registry.nlark.com/babel-jest/23.6.0
@@ -124,7 +124,7 @@ devDependencies:
   serve-static: 1.13.2
   svg-sprite-loader: registry.nlark.com/svg-sprite-loader/4.1.3
   svgo: registry.nlark.com/svgo/1.2.0
-  vue-template-compiler: registry.nlark.com/vue-template-compiler/2.6.10
+  vue-template-compiler: registry.nlark.com/vue-template-compiler/2.6.14
 
 packages:
 
@@ -1610,10 +1610,6 @@ packages:
       assert-plus: 1.0.0
     dev: true
 
-  /de-indent/1.0.2:
-    resolution: {integrity: sha1-sgOOhG3DO6pXlhKNCAS0VbjB4h0=, tarball: de-indent/download/de-indent-1.0.2.tgz}
-    dev: true
-
   /deasync/0.1.21:
     resolution: {integrity: sha1-uxHqvURmwNh3bw2C3rimEmRg0w8=, tarball: deasync/download/deasync-0.1.21.tgz}
     engines: {node: '>=0.11.0'}
@@ -2654,13 +2650,15 @@ packages:
     resolution: {integrity: sha1-AdJwnHnUFpi7AdTezF6dpOSgM9k=, tarball: http-parser-js/download/http-parser-js-0.5.3.tgz}
     dev: true
 
-  /http-proxy/1.18.1:
+  /http-proxy/1.18.1_debug@4.3.2:
     resolution: {integrity: sha1-QBVB8FNIhLv5UmAzTnL4juOXZUk=, tarball: http-proxy/download/http-proxy-1.18.1.tgz}
     engines: {node: '>=8.0.0'}
     dependencies:
       eventemitter3: registry.nlark.com/eventemitter3/4.0.7
       follow-redirects: registry.nlark.com/follow-redirects/1.14.4
       requires-port: 1.0.0
+    transitivePeerDependencies:
+      - debug
     dev: true
 
   /http-signature/1.2.0:
@@ -8144,7 +8142,7 @@ packages:
     dependencies:
       '@babel/core': registry.nlark.com/@babel/core/7.14.8
       '@vue/babel-preset-app': registry.nlark.com/@vue/babel-preset-app/4.5.13_vue@2.6.14
-      '@vue/cli-service': registry.nlark.com/@vue/cli-service/4.4.4_718d40b2aeef08a3cca4d73cd22ce32f
+      '@vue/cli-service': registry.nlark.com/@vue/cli-service/4.4.4_0f25d1aa8415e98c3e62a4178f3c555d
       '@vue/cli-shared-utils': registry.nlark.com/@vue/cli-shared-utils/4.5.13
       babel-loader: 8.2.2_10b6a9815ffc7b4b1f51ac243f183029
       cache-loader: registry.nlark.com/cache-loader/4.1.0_webpack@4.46.0
@@ -8166,7 +8164,7 @@ packages:
       '@vue/cli-service': ^3.0.0 || ^4.0.0-0
       eslint: '>= 1.6.0'
     dependencies:
-      '@vue/cli-service': registry.nlark.com/@vue/cli-service/4.4.4_718d40b2aeef08a3cca4d73cd22ce32f
+      '@vue/cli-service': registry.nlark.com/@vue/cli-service/4.4.4_0f25d1aa8415e98c3e62a4178f3c555d
       '@vue/cli-shared-utils': registry.nlark.com/@vue/cli-shared-utils/4.5.13
       eslint: registry.nlark.com/eslint/6.7.2
       eslint-loader: registry.nlark.com/eslint-loader/2.2.1_eslint@6.7.2+webpack@4.46.0
@@ -8187,11 +8185,11 @@ packages:
     peerDependencies:
       '@vue/cli-service': ^3.0.0 || ^4.0.0-0
     dependencies:
-      '@vue/cli-service': registry.nlark.com/@vue/cli-service/4.4.4_718d40b2aeef08a3cca4d73cd22ce32f
+      '@vue/cli-service': registry.nlark.com/@vue/cli-service/4.4.4_0f25d1aa8415e98c3e62a4178f3c555d
       '@vue/cli-shared-utils': registry.nlark.com/@vue/cli-shared-utils/4.5.13
     dev: true
 
-  registry.nlark.com/@vue/cli-plugin-unit-jest/4.4.4_1657b3ff25c06bc0119bf68b045e0a94:
+  registry.nlark.com/@vue/cli-plugin-unit-jest/4.4.4_d66ccbb5f6185d8a96d8db6d1190c254:
     resolution: {integrity: sha1-oi4p7FruNPI+RNLA8+fXo72MGcw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@vue/cli-plugin-unit-jest/download/@vue/cli-plugin-unit-jest-4.4.4.tgz}
     id: registry.nlark.com/@vue/cli-plugin-unit-jest/4.4.4
     name: '@vue/cli-plugin-unit-jest'
@@ -8202,7 +8200,7 @@ packages:
       '@babel/core': registry.nlark.com/@babel/core/7.14.8
       '@babel/plugin-transform-modules-commonjs': registry.nlark.com/@babel/plugin-transform-modules-commonjs/7.14.5_@babel+core@7.14.8
       '@types/jest': registry.nlark.com/@types/jest/24.9.1
-      '@vue/cli-service': registry.nlark.com/@vue/cli-service/4.4.4_718d40b2aeef08a3cca4d73cd22ce32f
+      '@vue/cli-service': registry.nlark.com/@vue/cli-service/4.4.4_0f25d1aa8415e98c3e62a4178f3c555d
       '@vue/cli-shared-utils': registry.nlark.com/@vue/cli-shared-utils/4.5.13
       babel-core: 7.0.0-bridge.0_@babel+core@7.14.8
       babel-jest: registry.nlark.com/babel-jest/24.9.0_@babel+core@7.14.8
@@ -8214,7 +8212,7 @@ packages:
       jest-transform-stub: 2.0.0
       jest-watch-typeahead: registry.nlark.com/jest-watch-typeahead/0.4.2
       ts-jest: registry.nlark.com/ts-jest/24.3.0_jest@24.9.0
-      vue-jest: registry.nlark.com/vue-jest/3.0.7_8777fe96b5d519ea078e0dc1b9e34092
+      vue-jest: registry.nlark.com/vue-jest/3.0.7_23079ea8b11744def63c06b8933c1bec
     transitivePeerDependencies:
       - bufferutil
       - canvas
@@ -8232,10 +8230,10 @@ packages:
     peerDependencies:
       '@vue/cli-service': ^3.0.0 || ^4.0.0-0
     dependencies:
-      '@vue/cli-service': registry.nlark.com/@vue/cli-service/4.4.4_718d40b2aeef08a3cca4d73cd22ce32f
+      '@vue/cli-service': registry.nlark.com/@vue/cli-service/4.4.4_0f25d1aa8415e98c3e62a4178f3c555d
     dev: true
 
-  registry.nlark.com/@vue/cli-service/4.4.4_718d40b2aeef08a3cca4d73cd22ce32f:
+  registry.nlark.com/@vue/cli-service/4.4.4_0f25d1aa8415e98c3e62a4178f3c555d:
     resolution: {integrity: sha1-JWyZDkmi/43FM7dzxQSmVDXHXEw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@vue/cli-service/download/@vue/cli-service-4.4.4.tgz}
     id: registry.nlark.com/@vue/cli-service/4.4.4
     name: '@vue/cli-service'
@@ -8309,9 +8307,9 @@ packages:
       terser-webpack-plugin: registry.nlark.com/terser-webpack-plugin/2.3.8_webpack@4.46.0
       thread-loader: registry.nlark.com/thread-loader/2.1.3_webpack@4.46.0
       url-loader: 2.3.0_file-loader@4.3.0+webpack@4.46.0
-      vue-loader: registry.nlark.com/vue-loader/15.9.6_b8d247df3b20733387738da3a99b0112
+      vue-loader: registry.nlark.com/vue-loader/15.9.6_679359cdb69c218f2f8f476b2ba08796
       vue-style-loader: 4.1.3
-      vue-template-compiler: registry.nlark.com/vue-template-compiler/2.6.10
+      vue-template-compiler: registry.nlark.com/vue-template-compiler/2.6.14
       webpack: registry.nlark.com/webpack/4.46.0
       webpack-bundle-analyzer: registry.nlark.com/webpack-bundle-analyzer/3.9.0
       webpack-chain: registry.nlark.com/webpack-chain/6.5.1
@@ -8360,7 +8358,7 @@ packages:
       prettier: registry.npmmirror.com/prettier/1.19.1
     dev: true
 
-  registry.nlark.com/@vue/test-utils/1.0.0-beta.29_1a0b9951acc292a318c154c982a62228:
+  registry.nlark.com/@vue/test-utils/1.0.0-beta.29_9065e7474e033a8e4b95615fc8e6c36c:
     resolution: {integrity: sha1-yULPJeiRzwgbagMzK0rh70MHJvA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@vue/test-utils/download/@vue/test-utils-1.0.0-beta.29.tgz}
     id: registry.nlark.com/@vue/test-utils/1.0.0-beta.29
     name: '@vue/test-utils'
@@ -8372,7 +8370,7 @@ packages:
       dom-event-types: 1.0.0
       lodash: 4.17.21
       vue: registry.npmmirror.com/vue/2.6.14
-      vue-template-compiler: registry.nlark.com/vue-template-compiler/2.6.10
+      vue-template-compiler: registry.nlark.com/vue-template-compiler/2.6.14
     dev: true
 
   registry.nlark.com/JSV/4.0.2:
@@ -9407,6 +9405,12 @@ packages:
     version: 1.30.1
     dev: true
 
+  registry.nlark.com/de-indent/1.0.2:
+    resolution: {integrity: sha1-sgOOhG3DO6pXlhKNCAS0VbjB4h0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/de-indent/download/de-indent-1.0.2.tgz}
+    name: de-indent
+    version: 1.0.2
+    dev: true
+
   registry.nlark.com/debug/2.6.9:
     resolution: {integrity: sha1-XRKFFd8TT/Mn6QpMk/Tgd6U2NB8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/debug/download/debug-2.6.9.tgz}
     name: debug
@@ -10006,6 +10010,11 @@ packages:
     name: follow-redirects
     version: 1.14.4
     engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
 
   registry.nlark.com/form-data/2.3.3:
     resolution: {integrity: sha1-3M5SwF9kTymManq5Nr1yTO/786Y=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/form-data/download/form-data-2.3.3.tgz}
@@ -10248,6 +10257,13 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  registry.nlark.com/he/1.2.0:
+    resolution: {integrity: sha1-hK5l+n6vsWX922FWauFLrwVmTw8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/he/download/he-1.2.0.tgz}
+    name: he
+    version: 1.2.0
+    hasBin: true
+    dev: true
+
   registry.nlark.com/highlight.js/10.7.3:
     resolution: {integrity: sha1-aXJy45kTVuQMPKxWanTu9oF1ZTE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/highlight.js/download/highlight.js-10.7.3.tgz}
     name: highlight.js
@@ -10338,16 +10354,19 @@ packages:
       toidentifier: 1.0.0
     dev: true
 
-  registry.nlark.com/http-proxy-middleware/0.19.1:
+  registry.nlark.com/http-proxy-middleware/0.19.1_debug@4.3.2:
     resolution: {integrity: sha1-GDx9xKoUeRUDBkmMIQza+WCApDo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/http-proxy-middleware/download/http-proxy-middleware-0.19.1.tgz}
+    id: registry.nlark.com/http-proxy-middleware/0.19.1
     name: http-proxy-middleware
     version: 0.19.1
     engines: {node: '>=4.0.0'}
     dependencies:
-      http-proxy: 1.18.1
+      http-proxy: 1.18.1_debug@4.3.2
       is-glob: 4.0.1
       lodash: 4.17.21
       micromatch: 3.1.10
+    transitivePeerDependencies:
+      - debug
     dev: true
 
   registry.nlark.com/human-signals/1.1.1:
@@ -13197,7 +13216,7 @@ packages:
       - supports-color
     dev: true
 
-  registry.nlark.com/vue-jest/3.0.7_8777fe96b5d519ea078e0dc1b9e34092:
+  registry.nlark.com/vue-jest/3.0.7_23079ea8b11744def63c06b8933c1bec:
     resolution: {integrity: sha1-ptKXWKXLTXUPXRJCISvjm+QpajM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/vue-jest/download/vue-jest-3.0.7.tgz}
     id: registry.nlark.com/vue-jest/3.0.7
     name: vue-jest
@@ -13219,11 +13238,11 @@ packages:
       source-map: 0.5.7
       tsconfig: 7.0.0
       vue: registry.npmmirror.com/vue/2.6.14
-      vue-template-compiler: registry.nlark.com/vue-template-compiler/2.6.10
+      vue-template-compiler: registry.nlark.com/vue-template-compiler/2.6.14
       vue-template-es2015-compiler: registry.nlark.com/vue-template-es2015-compiler/1.9.1
     dev: true
 
-  registry.nlark.com/vue-loader/15.9.6_b8d247df3b20733387738da3a99b0112:
+  registry.nlark.com/vue-loader/15.9.6_679359cdb69c218f2f8f476b2ba08796:
     resolution: {integrity: sha1-9Lua4gw6g3CvPs8JuBJtOP/ba4s=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/vue-loader/download/vue-loader-15.9.6.tgz}
     id: registry.nlark.com/vue-loader/15.9.6
     name: vue-loader
@@ -13246,17 +13265,17 @@ packages:
       loader-utils: 1.4.0
       vue-hot-reload-api: 2.3.4
       vue-style-loader: 4.1.3
-      vue-template-compiler: registry.nlark.com/vue-template-compiler/2.6.10
+      vue-template-compiler: registry.nlark.com/vue-template-compiler/2.6.14
       webpack: registry.nlark.com/webpack/4.46.0
     dev: true
 
-  registry.nlark.com/vue-template-compiler/2.6.10:
-    resolution: {integrity: sha1-MjtPNJXwT6o1AzN6gvXWUHeZycw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/vue-template-compiler/download/vue-template-compiler-2.6.10.tgz}
+  registry.nlark.com/vue-template-compiler/2.6.14:
+    resolution: {integrity: sha1-ovDn2YVnDULJye4NBE/tdpD092M=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/vue-template-compiler/download/vue-template-compiler-2.6.14.tgz}
     name: vue-template-compiler
-    version: 2.6.10
+    version: 2.6.14
     dependencies:
-      de-indent: 1.0.2
-      he: 1.2.0
+      de-indent: registry.nlark.com/de-indent/1.0.2
+      he: registry.nlark.com/he/1.2.0
     dev: true
 
   registry.nlark.com/vue-template-es2015-compiler/1.9.1:
@@ -13378,7 +13397,7 @@ packages:
       del: 4.1.1
       express: 4.17.1
       html-entities: 1.4.0
-      http-proxy-middleware: registry.nlark.com/http-proxy-middleware/0.19.1
+      http-proxy-middleware: registry.nlark.com/http-proxy-middleware/0.19.1_debug@4.3.2
       import-local: 2.0.0
       internal-ip: 4.3.0
       ip: 1.1.5
@@ -13703,6 +13722,8 @@ packages:
     version: 0.23.0
     dependencies:
       follow-redirects: registry.nlark.com/follow-redirects/1.14.4
+    transitivePeerDependencies:
+      - debug
     dev: false
 
   registry.npmmirror.com/brace-expansion/1.1.11:
