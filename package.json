@@ -7,7 +7,8 @@
     "svgo": "svgo -f src/common/icons/svg --config=src/common/icons/svgo.yml",
     "pretty": "pretty-quick --staged --pattern \"**/*.*(js|jsx|vue|scss)\"",
     "prepare": "husky install",
-    "init": "npx husky set .husky/pre-commit \"npm run pretty\""
+    "set-pre": "npx husky set .husky/pre-commit \"npm run pretty\"",
+    "init": "npm-run-all prepare set-pre"
   },
   "dependencies": {
     "@vue/composition-api": "^1.2.4",
@@ -43,6 +44,7 @@
     "xlsx": "0.14.1"
   },
   "devDependencies": {
+    "npm-run-all": "^4.1.5",
     "@babel/plugin-proposal-nullish-coalescing-operator": "^7.14.2",
     "@babel/plugin-proposal-optional-chaining": "^7.14.2",
     "@vue/cli-plugin-babel": "4.4.4",
