@@ -6,7 +6,8 @@
     "build:stage": "vue-cli-service build --mode staging",
     "svgo": "svgo -f src/common/icons/svg --config=src/common/icons/svgo.yml",
     "pretty": "pretty-quick --staged --pattern \"**/*.*(js|jsx|vue|scss)\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "set-pre": "npx husky set .husky/pre-commit \"npm run pretty\""
   },
   "dependencies": {
     "@vue/composition-api": "^1.2.4",
